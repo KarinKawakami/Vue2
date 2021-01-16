@@ -37,11 +37,13 @@
         <div class="service-content">
           <div class="service-img" v-for="(data,index) in service" :key="index">
             <img :src="data.img" alt="" />
+            <div service-content_inner>
+             <h3 class="mgb-15">{{data.title}}</h3>
+             <p class="mgb-15">{{data.description}}</p>
+             <p class="mgb-15">{{data.needs}}</p>
+             <a href="" class="common-btn service-btn">{{data.btn}}</a>
+            </div>
           </div>
-            <h3 class="mgb-15">{{data.title}}</h3>
-            <p class="mgb-15">{{data.description}}</p>
-            <p class="mgb-15">{{data.needs}}</p>
-            <a href="" class="common-btn service-btn">{{data.btn}}</a>
         </div>
       </div>
       <div class="company">
